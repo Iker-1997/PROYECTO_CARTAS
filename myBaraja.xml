@@ -41,38 +41,38 @@
             <attack></attack>
             <defense></defense>
         </card>
-        <card summonPoints="3" type="infantry">
-            <name></name>
+        <card summonPoints="3" type="chivalry">
+            <name>Silvia</name>
             <description></description>
-            <attack></attack>
-            <defense></defense>
+            <attack>3</attack>
+            <defense>3</defense>
+        </card>
+        <card summonPoints="3" type="chivalry">
+            <name>Emilio</name>
+            <description></description>
+            <attack>2</attack>
+            <defense>3</defense>
+        </card>
+        <card summonPoints="3" type="chivalry">
+            <name>Gabriel</name>
+            <description></description>
+            <attack>1</attack>
+            <defense>4</defense>
+        </card>
+        <card summonPoints="3" type="chivalry">
+            <name>David</name>
+            <description></description>
+            <attack>2</attack>
+            <defense>4</defense>
+        </card>
+        <card summonPoints="3" type="chivalry">
+            <name>Adria</name>
+            <description></description>
+            <attack>2</attack>
+            <defense>4</defense>
         </card>
         <card summonPoints="3" type="infantry">
-            <name></name>
-            <description></description>
-            <attack></attack>
-            <defense></defense>
-        </card>
-        <card summonPoints="3" type="infantry">
-            <name></name>
-            <description></description>
-            <attack></attack>
-            <defense></defense>
-        </card>
-        <card summonPoints="3" type="infantry">
-            <name></name>
-            <description></description>
-            <attack></attack>
-            <defense></defense>
-        </card>
-        <card summonPoints="3" type="infantry">
-            <name></name>
-            <description></description>
-            <attack></attack>
-            <defense></defense>
-        </card>
-        <card summonPoints="3" type="infantry">
-            <name></name>
+            <name>Eric</name>
             <description></description>
             <attack></attack>
             <defense></defense>
