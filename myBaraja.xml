@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE PlayerConfig SYSTEM "ieti_card_game.dtd">
+
+<PlayerConfig>
+    <playerLife>10</playerLife>
+    <summonPointsPlayer></summonPointsPlayer>
+    <deck>
+        <card summonPoints="3" type="lancer">
+            <name>Rohan</name>
+            <description></description>
+            <attack>5</attack>
+            <defense>3</defense>
+        </card>
+        <card summonPoints="3" type="lancer">
+            <name>Arnau</name>
+            <description></description>
+            <attack>5</attack>
+            <defense>3</defense>
+        </card>
+        <card summonPoints="3" type="lancer">
+            <name>Alexgomez</name>
+            <description></description>
+            <attack>4</attack>
+            <defense>2</defense>
+        </card>
+        <card summonPoints="3" type="lancer">
+            <name>Alfonso</name>
+            <description></description>
+            <attack>4</attack>
+            <defense>1</defense>
+        </card>
+        <card summonPoints="3" type="lancer">
+            <name>Isma</name>
+            <description></description>
+            <attack>3</attack>
+            <defense>1</defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name>Alexgomez</name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+
+    </deck>
+</PlayerConfig>
+
