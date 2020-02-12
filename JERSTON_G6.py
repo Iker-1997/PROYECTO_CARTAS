@@ -1,5 +1,5 @@
 def menu():
-
+    # Creamos el menu para utilizarlo despues.
     print("MENU PRINCIPAL", "\n1) Cargar cartas.", "\n2) Cargar cartas Enemigo.", "\n3) Crear mazo aleatorio",
           "\n4) Crear mazo ofensivo", "\n5) Crear mazo defensivo", "\n6) Crear mazo equilibrado",
           "\n7) Crear mazo aleatorio Enemigo", "\n8) Crear mazo ofensivo Enemigo", "\n9) Crear mazo defensivo Enemigo",
