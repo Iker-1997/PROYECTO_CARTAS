@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE PlayerConfig SYSTEM "ieti_card_game.dtd">
+
+<PlayerConfig>
+    <playerLife></playerLife>
+    <summonPointsPlayer></summonPointsPlayer>
+    <deck>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+    </deck>
+
+</PlayerConfig>
+
