@@ -11,7 +11,121 @@
             <attack></attack>
             <defense></defense>
         </card>
-    </deck>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name></name>
+            <description></description>
+            <attack></attack>
+            <defense></defense>
+        </card>
 
+    </deck>
 </PlayerConfig>
 
