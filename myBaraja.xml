@@ -77,7 +77,7 @@
             <attack>3</attack>
             <defense>3</defense>
         </card>
-        <card summonPoints="3" type="infantry">
+        <card summonPoints="3" type="lancer">
             <name></name>
             <description></description>
             <attack></attack>
