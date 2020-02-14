@@ -7,69 +7,69 @@
     <deck>
         <card summonPoints="3" type="lancer">
             <name>Rohan</name>
-            <description></description>
-            <attack>5</attack>
-            <defense>3</defense>
+            <description>Les seves flames </description>
+            <attack>1</attack>
+            <defense>2</defense>
         </card>
         <card summonPoints="3" type="lancer">
             <name>Arnau</name>
             <description></description>
-            <attack>5</attack>
-            <defense>3</defense>
+            <attack>2</attack>
+            <defense>2</defense>
         </card>
         <card summonPoints="3" type="lancer">
             <name>Alexgomez</name>
             <description></description>
-            <attack>4</attack>
-            <defense>2</defense>
+            <attack>1</attack>
+            <defense>1</defense>
         </card>
         <card summonPoints="3" type="lancer">
             <name>Alfonso</name>
             <description></description>
-            <attack>4</attack>
+            <attack>1</attack>
             <defense>1</defense>
         </card>
         <card summonPoints="3" type="lancer">
             <name>Isma</name>
             <description></description>
-            <attack>3</attack>
-            <defense>1</defense>
+            <attack>1</attack>
+            <defense>2</defense>
         </card>
         <card summonPoints="3" type="infantry">
-            <name>Alexgomez</name>
+            <name>Adrigomez</name>
             <description></description>
-            <attack></attack>
-            <defense></defense>
+            <attack>3</attack>
+            <defense>2</defense>
         </card>
         <card summonPoints="3" type="chivalry">
             <name>Silvia</name>
             <description></description>
             <attack>3</attack>
-            <defense>3</defense>
+            <defense>0</defense>
         </card>
         <card summonPoints="3" type="chivalry">
             <name>Emilio</name>
-            <description></description>
-            <attack>2</attack>
-            <defense>3</defense>
-        </card>
-        <card summonPoints="3" type="chivalry">
-            <name>Gabriel</name>
             <description></description>
             <attack>1</attack>
             <defense>4</defense>
         </card>
         <card summonPoints="3" type="chivalry">
-            <name>David</name>
+            <name>Gabriel</name>
             <description></description>
             <attack>2</attack>
-            <defense>4</defense>
+            <defense>1</defense>
+        </card>
+        <card summonPoints="3" type="chivalry">
+            <name>Davidcastilla</name>
+            <description></description>
+            <attack>2</attack>
+            <defense>2</defense>
         </card>
         <card summonPoints="3" type="chivalry">
             <name>Adria</name>
             <description></description>
             <attack>2</attack>
-            <defense>4</defense>
+            <defense>1</defense>
         </card>
         <card summonPoints="3" type="infantry">
             <name>Eric</name>
