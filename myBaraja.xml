@@ -27,7 +27,7 @@
             <name>Alfonso</name>
             <description></description>
             <attack>1</attack>
-            <defense>1</defense>
+            <defense>3</defense>
         </card>
         <card summonPoints="3" type="lancer">
             <name>Isma</name>
@@ -75,40 +75,40 @@
             <name>Eric</name>
             <description></description>
             <attack>3</attack>
-            <defense>3</defense>
+            <defense>0</defense>
         </card>
         <card summonPoints="3" type="lancer">
-            <name></name>
+            <name>Fran</name>
             <description></description>
-            <attack></attack>
-            <defense></defense>
+            <attack>3</attack>
+            <defense>2</defense>
         </card>
         <card summonPoints="3" type="infantry">
-            <name></name>
+            <name>Anna</name>
             <description></description>
-            <attack></attack>
-            <defense></defense>
+            <attack>1</attack>
+            <defense>3</defense>
         </card>
         <card summonPoints="3" type="infantry">
-            <name></name>
+            <name>Aron</name>
             <description></description>
-            <attack></attack>
-            <defense></defense>
+            <attack>1</attack>
+            <defense>1</defense>
         </card>
         <card summonPoints="3" type="infantry">
             <name>Pablo</name>
             <description></description>
-            <attack>4</attack>
-            <defense>4</defense>
+            <attack>2</attack>
+            <defense>2</defense>
         </card>
         <card summonPoints="3" type="infantry">
             <name>Ruben</name>
             <description></description>
-            <attack>4</attack>
-            <defense>3</defense>
+            <attack>2</attack>
+            <defense>1</defense>
         </card>
         <card summonPoints="3" type="infantry">
-            <name>Jesús</name>
+            <name>Jesus</name>
             <description></description>
             <attack>3</attack>
             <defense>2</defense>
@@ -116,14 +116,14 @@
         <card summonPoints="3" type="infantry">
             <name>Eduard</name>
             <description></description>
-            <attack>3</attack>
+            <attack>0</attack>
             <defense>3</defense>
         </card>
         <card summonPoints="3" type="infantry">
             <name>Carlos</name>
             <description></description>
             <attack>4</attack>
-            <defense>3</defense>
+            <defense>1</defense>
         </card>
 
     </deck>
