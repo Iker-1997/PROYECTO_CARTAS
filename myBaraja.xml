@@ -3,127 +3,127 @@
 
 <PlayerConfig>
     <playerLife>10</playerLife>
-    <summonPointsPlayer></summonPointsPlayer>
+    <summonPointsPlayer>5</summonPointsPlayer>
     <deck>
         <card summonPoints="3" type="lancer">
             <name>Rohan</name>
-            <description></description>
-            <attack>5</attack>
-            <defense>3</defense>
+            <description>Les seves flames son capaces daturar al vent </description>
+            <attack>1</attack>
+            <defense>2</defense>
         </card>
-        <card summonPoints="3" type="lancer">
+        <card summonPoints="4" type="lancer">
             <name>Arnau</name>
-            <description></description>
-            <attack>5</attack>
-            <defense>3</defense>
-        </card>
-        <card summonPoints="3" type="lancer">
-            <name>Alexgomez</name>
-            <description></description>
-            <attack>4</attack>
+            <description>Valentia,honor i gloria. Cavaller amb armadura i espasa</description>
+            <attack>2</attack>
             <defense>2</defense>
         </card>
         <card summonPoints="3" type="lancer">
-            <name>Alfonso</name>
-            <description></description>
-            <attack>4</attack>
+            <name>Alexgomez</name>
+            <description>Capaç descabollirse entre la tormenta. Apareix quan menys tho esperes</description>
+            <attack>1</attack>
             <defense>1</defense>
         </card>
         <card summonPoints="3" type="lancer">
+            <name>Alfonso</name>
+            <description>La seva cuirassa es molt dificil de batre</description>
+            <attack>1</attack>
+            <defense>3</defense>
+        </card>
+        <card summonPoints="3" type="lancer">
             <name>Isma</name>
-            <description></description>
-            <attack>3</attack>
-            <defense>1</defense>
+            <description>La seva estrategia es basa en el punt debil de lenemic.</description>
+            <attack>1</attack>
+            <defense>2</defense>
         </card>
         <card summonPoints="3" type="infantry">
-            <name>Alexgomez</name>
-            <description></description>
-            <attack></attack>
-            <defense></defense>
+            <name>Adrigomez</name>
+            <description>Capaç denderrocar qualsevol tipus de mur i obstacle que sinterposi al seu cami</description>
+            <attack>3</attack>
+            <defense>2</defense>
         </card>
         <card summonPoints="3" type="chivalry">
             <name>Silvia</name>
             <description></description>
             <attack>3</attack>
-            <defense>3</defense>
+            <defense>0</defense>
         </card>
         <card summonPoints="3" type="chivalry">
             <name>Emilio</name>
-            <description></description>
-            <attack>2</attack>
-            <defense>3</defense>
-        </card>
-        <card summonPoints="3" type="chivalry">
-            <name>Gabriel</name>
             <description></description>
             <attack>1</attack>
             <defense>4</defense>
         </card>
         <card summonPoints="3" type="chivalry">
-            <name>David</name>
+            <name>Gabriel</name>
             <description></description>
             <attack>2</attack>
-            <defense>4</defense>
+            <defense>1</defense>
+        </card>
+        <card summonPoints="3" type="chivalry">
+            <name>Davidcastilla</name>
+            <description></description>
+            <attack>2</attack>
+            <defense>2</defense>
         </card>
         <card summonPoints="3" type="chivalry">
             <name>Adria</name>
             <description></description>
             <attack>2</attack>
-            <defense>4</defense>
+            <defense>1</defense>
         </card>
         <card summonPoints="3" type="infantry">
             <name>Eric</name>
             <description></description>
-            <attack></attack>
-            <defense></defense>
+            <attack>3</attack>
+            <defense>0</defense>
+        </card>
+        <card summonPoints="3" type="lancer">
+            <name>Fran</name>
+            <description></description>
+            <attack>3</attack>
+            <defense>2</defense>
         </card>
         <card summonPoints="3" type="infantry">
-            <name></name>
+            <name>Anna</name>
             <description></description>
-            <attack></attack>
-            <defense></defense>
+            <attack>1</attack>
+            <defense>3</defense>
         </card>
         <card summonPoints="3" type="infantry">
-            <name></name>
+            <name>Aron</name>
             <description></description>
-            <attack></attack>
-            <defense></defense>
+            <attack>1</attack>
+            <defense>1</defense>
         </card>
         <card summonPoints="3" type="infantry">
-            <name></name>
+            <name>Pablo</name>
             <description></description>
-            <attack></attack>
-            <defense></defense>
+            <attack>2</attack>
+            <defense>2</defense>
         </card>
         <card summonPoints="3" type="infantry">
-            <name></name>
+            <name>Ruben</name>
             <description></description>
-            <attack></attack>
-            <defense></defense>
+            <attack>2</attack>
+            <defense>1</defense>
         </card>
         <card summonPoints="3" type="infantry">
-            <name></name>
+            <name>Jesus</name>
             <description></description>
-            <attack></attack>
-            <defense></defense>
+            <attack>3</attack>
+            <defense>2</defense>
         </card>
         <card summonPoints="3" type="infantry">
-            <name></name>
+            <name>Eduard</name>
             <description></description>
-            <attack></attack>
-            <defense></defense>
+            <attack>0</attack>
+            <defense>3</defense>
         </card>
         <card summonPoints="3" type="infantry">
-            <name></name>
+            <name>Carlos</name>
             <description></description>
-            <attack></attack>
-            <defense></defense>
-        </card>
-        <card summonPoints="3" type="infantry">
-            <name></name>
-            <description></description>
-            <attack></attack>
-            <defense></defense>
+            <attack>4</attack>
+            <defense>1</defense>
         </card>
 
     </deck>
