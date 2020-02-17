@@ -3,41 +3,41 @@
 
 <PlayerConfig>
     <playerLife>10</playerLife>
-    <summonPointsPlayer></summonPointsPlayer>
+    <summonPointsPlayer>5</summonPointsPlayer>
     <deck>
         <card summonPoints="3" type="lancer">
             <name>Rohan</name>
-            <description>Les seves flames </description>
+            <description>Les seves flames son capaces daturar al vent </description>
             <attack>1</attack>
             <defense>2</defense>
         </card>
-        <card summonPoints="3" type="lancer">
+        <card summonPoints="4" type="lancer">
             <name>Arnau</name>
-            <description></description>
+            <description>Valentia,honor i gloria. Cavaller amb armadura i espasa</description>
             <attack>2</attack>
             <defense>2</defense>
         </card>
         <card summonPoints="3" type="lancer">
             <name>Alexgomez</name>
-            <description></description>
+            <description>Capaç descabollirse entre la tormenta. Apareix quan menys tho esperes</description>
             <attack>1</attack>
             <defense>1</defense>
         </card>
         <card summonPoints="3" type="lancer">
             <name>Alfonso</name>
-            <description></description>
+            <description>La seva cuirassa es molt dificil de batre</description>
             <attack>1</attack>
             <defense>3</defense>
         </card>
         <card summonPoints="3" type="lancer">
             <name>Isma</name>
-            <description></description>
+            <description>La seva estrategia es basa en el punt debil de lenemic.</description>
             <attack>1</attack>
             <defense>2</defense>
         </card>
         <card summonPoints="3" type="infantry">
             <name>Adrigomez</name>
-            <description></description>
+            <description>Capaç denderrocar qualsevol tipus de mur i obstacle que sinterposi al seu cami</description>
             <attack>3</attack>
             <defense>2</defense>
         </card>
