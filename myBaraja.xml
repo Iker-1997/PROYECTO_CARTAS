@@ -121,7 +121,7 @@
         </card>
         <card summonPoints="5" type="infantry">
             <name>Carlos</name>
-            <description>El seu atac es suficient per enderrocar amb un cop a lenemic</description>
+            <description>El seu atac es dels mes potents. No el subestimis</description>
             <attack>4</attack>
             <defense>1</defense>
         </card>
