@@ -1,8 +1,10 @@
-from xml.dom import minidom
-archivo = minidom.parse('mybaraja.xml')
-rai
-for playerconfig in
-playerlife= archivo.getElementsByTagName("playerLife")[0]
-print(playerlife.firstChild.data)
-summonpoints = archivo.getElementsByTagName("summonPointsPlayer")[0]
-print(summonpoints.sChild.data)
+import xml.etree.ElementTree as ET
+tree = ET.parse('myBaraja.xml')
+root = tree.getroot()
+print(root)
+for child in root:
+    print(child.tag,child.attrib)
+    for child2 in child:
+        print(child2.tag,child2.attrib)
+        for child3 in child2:
+            print(child3.tag,child3.attrib)
