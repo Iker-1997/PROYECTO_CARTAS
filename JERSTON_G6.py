@@ -6,20 +6,35 @@ def menu():
           "\n10) Crear mazo equilibrado Enemigo", "\n11) Luchar Jugador vs Jugador",
           "\n12) Luchar Jugador vs Bot (arcade)", "\n13) Luchar Jugador vs Bot (liga)", "\n0) Finalizar")
 
-
+# Comentario de prueba skhfbvkgjdanhlkfjlhksda
 menu()
-opcio = int(input("Que opcion quieres escoger?:\n"))
+valido = 0
+while valido == 0:
+    try:
+        opcio = int(input("Que opcion quieres escoger?:\n"))
+        valido = 1
+    except ValueError:
+        print("TECLEA UN NUMERO ENTERO VALIDO.")
+
 
 while opcio < 0 or opcio > 13:
 
+    print("TECLEA UN NUMERO ENTERO VALIDO.")
     menu()
-    opcio = int(input("Que opcion quieres escoger?:\n"))
+    valido = 0
+    while valido == 0:
+        try:
+            opcio = int(input("Que opcion quieres escoger?:\n"))
+            valido = 1
+        except ValueError:
+            print("TECLEA UN NUMERO ENTERO VALIDO.")
 
 while 0 <= opcio <= 13:
     # Una vegada ha entrat al bucle, tenim les condicions per a cada opcio
     if opcio == 1:
         print("Cargar cartas")
         input("Pulsa cualquier tecla para volver al menu")
+        opcio = 15
     elif opcio == 2:
         print("Cargar cartas Enemigo")
         input("Pulsa cualquier tecla para volver al menu")
@@ -59,8 +74,20 @@ while 0 <= opcio <= 13:
     else:
         break
     menu()
-    opcio = int(input("Que opcion quieres escoger?:\n"))
+    valido = 0
+    while valido == 0:
+        try:
+            opcio = int(input("Que opcion quieres escoger?:\n"))
+            valido = 1
+        except ValueError:
+            print("TECLEA UN NUMERO ENTERO VALIDO.")
 
     while opcio < 0 or opcio > 13:
         menu()
-        opcio = int(input("Que opcion quieres escoger?:\n"))
+        valido = 0
+        while valido == 0:
+            try:
+                opcio = int(input("Que opcion quieres escoger?:\n"))
+                valido = 1
+            except ValueError:
+                print("TECLEA UN NUMERO ENTERO VALIDO.")
