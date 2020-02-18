@@ -8,4 +8,4 @@ for child in root:
     for child2 in child:
         print(child2.tag,child2.attrib)
         for child3 in child2:
-            print(child3.tag,child3.attrib,child3.text)
+            print(child3.tag,child3.attrib,child3.text),,
