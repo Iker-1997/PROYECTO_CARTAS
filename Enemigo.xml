@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE PlayerConfig SYSTEM "ieti_card_game.dtd">
+
+<PlayerConfig>
+    <playerLife>10</playerLife>
+    <summonPointsPlayer>5</summonPointsPlayer>
+    <deck>
+        <card summonPoints="3" type="lancer">
+            <name>Rohan</name>
+            <description>Les seves flames son capaces daturar al vent</description>
+            <attack>1</attack>
+            <defense>2</defense>
+        </card>
+        <card summonPoints="4" type="lancer">
+            <name>Arnau</name>
+            <description>Valentia,honor i gloria. Disposa dArmadura i espasa</description>
+            <attack>2</attack>
+            <defense>2</defense>
+        </card>
+        <card summonPoints="2" type="lancer">
+            <name>Alexgomez</name>
+            <description>Capaç descabollirse entre la tormenta</description>
+            <attack>1</attack>
+            <defense>1</defense>
+        </card>
+        <card summonPoints="4" type="lancer">
+            <name>Alfonso</name>
+            <description>La seva cuirassa es molt dificil de batre</description>
+            <attack>1</attack>
+            <defense>3</defense>
+        </card>
+        <card summonPoints="3" type="lancer">
+            <name>Isma</name>
+            <description>La seva estrategia es basa en el punt debil de lenemic</description>
+            <attack>1</attack>
+            <defense>2</defense>
+        </card>
+        <card summonPoints="5" type="infantry">
+            <name>Adrigomez</name>
+            <description>Capaç denderrocar qualsevol tipus de mur i obstacle</description>
+            <attack>3</attack>
+            <defense>2</defense>
+        </card>
+        <card summonPoints="3" type="chivalry">
+            <name>Silvia</name>
+            <description>Disposa de bones armes per derribar lenemic</description>
+            <attack>3</attack>
+            <defense>0</defense>
+        </card>
+        <card summonPoints="5" type="chivalry">
+            <name>Emilio</name>
+            <description>Rep els cops i gairebe ni simmuta</description>
+            <attack>1</attack>
+            <defense>4</defense>
+        </card>
+        <card summonPoints="3" type="chivalry">
+            <name>Gabriel</name>
+            <description>Soldat aprenent amb la velentia de participar sempre</description>
+            <attack>2</attack>
+            <defense>1</defense>
+        </card>
+        <card summonPoints="4" type="chivalry">
+            <name>Davidcastilla</name>
+            <description>La gloria i la saviesa es el que mes el representa</description>
+            <attack>2</attack>
+            <defense>2</defense>
+        </card>
+        <card summonPoints="3" type="chivalry">
+            <name>Adria</name>
+            <description>Equilibri que tot exercit necessita. Ofereix confiança</description>
+            <attack>2</attack>
+            <defense>1</defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name>Eric</name>
+            <description>Guerrer que prioritza sempre latac abans que la defensa</description>
+            <attack>3</attack>
+            <defense>0</defense>
+        </card>
+        <card summonPoints="5" type="lancer">
+            <name>Fran</name>
+            <description>Sel reconeix com al lider que motiva a tothom qui lenvolta</description>
+            <attack>3</attack>
+            <defense>2</defense>
+        </card>
+        <card summonPoints="4" type="infantry">
+            <name>Anna</name>
+            <description>Apareix quan menys tho esperes. Disposa dun bon escut</description>
+            <attack>1</attack>
+            <defense>3</defense>
+        </card>
+        <card summonPoints="2" type="infantry">
+            <name>Aaron</name>
+            <description>Sap llegir els moviments del rival amb antelacio</description>
+            <attack>1</attack>
+            <defense>1</defense>
+        </card>
+        <card summonPoints="4" type="infantry">
+            <name>Pablo</name>
+            <description>Apren molt rapid i lluita amb elegancia i valentia</description>
+            <attack>2</attack>
+            <defense>2</defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name>Ruben</name>
+            <description>El seu atac i precis i constant. Sespavila quan toca</description>
+            <attack>2</attack>
+            <defense>1</defense>
+        </card>
+        <card summonPoints="5" type="infantry">
+            <name>Jesus</name>
+            <description>Amb un cop et deixara atontat. Cal anar en compte amb ell</description>
+            <attack>3</attack>
+            <defense>2</defense>
+        </card>
+        <card summonPoints="3" type="infantry">
+            <name>Eduard</name>
+            <description>La seva defensa es de les mes potents que hi pot haver</description>
+            <attack>0</attack>
+            <defense>3</defense>
+        </card>
+        <card summonPoints="5" type="infantry">
+            <name>Carlos</name>
+            <description>El seu atac es dels mes potents. No el subestimis</description>
+            <attack>4</attack>
+            <defense>1</defense>
+        </card>
+
+    </deck>
+</PlayerConfig>
