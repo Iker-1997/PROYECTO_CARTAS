@@ -12,3 +12,4 @@ def cargar(nombre):
             return fitxer1
         except ValueError:
             print("No se ha podido leer el fichero")
+ggmglfdmgfld
