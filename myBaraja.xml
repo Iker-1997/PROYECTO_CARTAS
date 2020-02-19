@@ -103,25 +103,25 @@
         </card>
         <card summonPoints="3" type="infantry">
             <name>Ruben</name>
-            <description>El seu atac i precis i constant. Sespavila quan toca</description>
+            <description>Su ataque es preciso y constante. Se espabila cuando toca</description>
             <attack>2</attack>
             <defense>1</defense>
         </card>
         <card summonPoints="5" type="infantry">
             <name>Jesus</name>
-            <description>Amb un cop et deixara atontat. Cal anar en compte amb ell</description>
+            <description>Con un golpe te dejara aturdido</description>
             <attack>3</attack>
             <defense>2</defense>
         </card>
         <card summonPoints="3" type="infantry">
             <name>Eduard</name>
-            <description>La seva defensa es de les mes potents que hi pot haver</description>
+            <description>Su defensa es de las mas potentes que puede haber</description>
             <attack>0</attack>
             <defense>3</defense>
         </card>
         <card summonPoints="5" type="infantry">
             <name>Carlos</name>
-            <description>El seu atac es dels mes potents. No el subestimis</description>
+            <description>Su ataque es de los mas potentes. No lo subestimes</description>
             <attack>4</attack>
             <defense>1</defense>
         </card>
