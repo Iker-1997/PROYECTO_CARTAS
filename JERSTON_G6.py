@@ -84,7 +84,7 @@ while bucle_menu == False:
                     print("Cartas cargadas.")
                     baraja_cargada = True
                     break
-                except ValueError:
+                except FileNotFoundError:
                     print("No se ha podido leer el fichero")
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 2:
@@ -92,7 +92,7 @@ while bucle_menu == False:
                     enemigo = ET.parse("Enemigo.xml")
                     print("Cartas enemigas cargadas.")
                     enemigo_cargado = True
-                except ValueError:
+                except FileNotFoundError:
                     print("No se ha podido leer el fichero")
                 input("Pulsa cualquier tecla para volver al menu")
             else:
@@ -147,7 +147,7 @@ while bucle_menu == False:
                     baraja = ET.parse("myBaraja.xml")
                     print("Cartas cargadas.")
                     baraja_cargada = True
-                except ValueError:
+                except FileNotFoundError:
                     print("No se ha podido leer el fichero")
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 2:
@@ -156,7 +156,7 @@ while bucle_menu == False:
                     print("Cartas enemigas cargadas.")
                     enemigo_cargado = True
                     break
-                except ValueError:
+                except FileNotFoundError:
                     print("No se ha podido leer el fichero")
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 3:
@@ -234,7 +234,7 @@ while bucle_menu == False:
                     baraja_cargada = True
                     mazo_aliado = False
                     break
-                except ValueError:
+                except FileNotFoundError:
                     print("No se ha podido leer el fichero")
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 2:
@@ -243,7 +243,7 @@ while bucle_menu == False:
                     print("Cartas enemigas cargadas.")
                     enemigo_cargado = True
                     break
-                except ValueError:
+                except FileNotFoundError:
                     print("No se ha podido leer el fichero")
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 3:
@@ -316,7 +316,7 @@ while bucle_menu == False:
                     baraja = ET.parse("myBaraja.xml")
                     print("Cartas cargadas.")
                     baraja_cargada = True
-                except ValueError:
+                except FileNotFoundError:
                     print("No se ha podido leer el fichero")
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 2:
@@ -324,7 +324,7 @@ while bucle_menu == False:
                     enemigo = ET.parse("Enemigo.xml")
                     print("Cartas enemigas cargadas.")
                     enemigo_cargado = True
-                except ValueError:
+                except FileNotFoundError:
                     print("No se ha podido leer el fichero")
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 3:
@@ -418,7 +418,7 @@ while bucle_menu == False:
                     baraja_cargada = True
                     mazo_aliado = False
                     break
-                except ValueError:
+                except FileNotFoundError:
                     print("No se ha podido leer el fichero")
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 2:
@@ -426,7 +426,7 @@ while bucle_menu == False:
                     enemigo = ET.parse("Enemigo.xml")
                     print("Cartas enemigas cargadas.")
                     enemigo_cargado = True
-                except ValueError:
+                except FileNotFoundError:
                     print("No se ha podido leer el fichero")
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 3:
@@ -522,7 +522,7 @@ while bucle_menu == False:
                     baraja_cargada = True
                     mazo_aliado = False
                     break
-                except ValueError:
+                except FileNotFoundError:
                     print("No se ha podido leer el fichero")
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 2:
@@ -532,7 +532,7 @@ while bucle_menu == False:
                     enemigo_cargado = True
                     mazo_enemigo = False
                     break
-                except ValueError:
+                except FileNotFoundError:
                     print("No se ha podido leer el fichero")
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 3:
