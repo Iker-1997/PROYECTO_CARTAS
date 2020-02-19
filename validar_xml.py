@@ -6,9 +6,10 @@ def cargar(nombre):
             return fitxer2
         except ValueError:
             print("No se ha podido leer el fichero")
-    if nombre == "enemi1go":
-        try:
-            fitxer1 = ET.parse("Enemigo.xml")
-            return fitxer1
-        except ValueError:
-            print("No se ha podido leer el fichero")
+def cargarenemigo(nombre2):
+        if nombre2 == "enemigo":
+            try:
+                fitxer1 = ET.parse("Enemigo.xml")
+                return fitxer1
+            except ValueError:
+                print("No se ha podido leer el fichero")
