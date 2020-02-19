@@ -1,3 +1,6 @@
+import xml.etree.ElementTree as ET
+
+
 def menu_inicial():
     # Creamos el menu para utilizarlo despues.
     print("MENU INICIAL", "\n1) Cargar cartas.", "\n2) Cargar cartas Enemigo.", "\n0) Finalizar",
@@ -72,13 +75,21 @@ while opcio < 0 or opcio > 2:
 while 0 <= opcio <= 2 and baraja_cargada is False:
     # Una vegada ha entrat al bucle, tenim les condicions per a cada opcio
     if opcio == 1:
-        print("Cargar cartas")
-        baraja_cargada = True
+        try:
+            baraja = ET.parse("myBaraja.xml")
+            print("Cartas cargadas.")
+            baraja_cargada = True
+            break
+        except ValueError:
+            print("No se ha podido leer el fichero")
         input("Pulsa cualquier tecla para volver al menu")
-        break
     elif opcio == 2:
-        print("Cargar cartas Enemigo")
-        enemigo_cargado = True
+        try:
+            enemigo = ET.parse("Enemigo.xml")
+            print("Cartas enemigas cargadas.")
+            enemigo_cargado = True
+        except ValueError:
+            print("No se ha podido leer el fichero")
         input("Pulsa cualquier tecla para volver al menu")
     else:
         break
@@ -127,14 +138,22 @@ if baraja_cargada is True and enemigo_cargado is False:
     while 0 <= opcio <= 6 and enemigo_cargado == False and mazo_aliado == False:
 
         if opcio == 1:
-            print("Cargar cartas")
-            baraja_cargada = True
+            try:
+                baraja = ET.parse("myBaraja.xml")
+                print("Cartas cargadas.")
+                baraja_cargada = True
+            except ValueError:
+                print("No se ha podido leer el fichero")
             input("Pulsa cualquier tecla para volver al menu")
         elif opcio == 2:
-            print("Cargar cartas Enemigo")
-            enemigo_cargado = True
+            try:
+                enemigo = ET.parse("Enemigo.xml")
+                print("Cartas enemigas cargadas.")
+                enemigo_cargado = True
+                break
+            except ValueError:
+                print("No se ha podido leer el fichero")
             input("Pulsa cualquier tecla para volver al menu")
-            break
         elif opcio == 3:
             print("Crear mazo aleatorio")
             mazo_aliado = True
@@ -203,14 +222,22 @@ if baraja_cargada is True and mazo_aliado is True and enemigo_cargado is False:
     while 0 <= opcio <= 6 or 12 <= opcio <= 13:
 
         if opcio == 1:
-            print("Cargar cartas")
+            try:
+                baraja = ET.parse("myBaraja.xml")
+                print("Cartas cargadas.")
+                baraja_cargada = True
+            except ValueError:
+                print("No se ha podido leer el fichero")
             input("Pulsa cualquier tecla para volver al menu")
-            baraja_cargada = True
         elif opcio == 2:
-            print("Cargar cartas Enemigo")
+            try:
+                enemigo = ET.parse("Enemigo.xml")
+                print("Cartas enemigas cargadas.")
+                enemigo_cargado = True
+                break
+            except ValueError:
+                print("No se ha podido leer el fichero")
             input("Pulsa cualquier tecla para volver al menu")
-            enemigo_cargado = True
-            break
         elif opcio == 3:
             print("Crear mazo aleatorio")
             input("Pulsa cualquier tecla para volver al menu")
@@ -276,13 +303,21 @@ if baraja_cargada is True and enemigo_cargado is True and mazo_aliado is False a
     while 0 <= opcio <= 10:
 
         if opcio == 1:
-            print("Cargar cartas")
+            try:
+                baraja = ET.parse("myBaraja.xml")
+                print("Cartas cargadas.")
+                baraja_cargada = True
+            except ValueError:
+                print("No se ha podido leer el fichero")
             input("Pulsa cualquier tecla para volver al menu")
-            baraja_cargada = True
         elif opcio == 2:
-            print("Cargar cartas Enemigo")
+            try:
+                enemigo = ET.parse("Enemigo.xml")
+                print("Cartas enemigas cargadas.")
+                enemigo_cargado = True
+            except ValueError:
+                print("No se ha podido leer el fichero")
             input("Pulsa cualquier tecla para volver al menu")
-            enemigo_cargado = True
         elif opcio == 3:
             print("Crear mazo aleatorio")
             mazo_aliado = True
@@ -367,13 +402,21 @@ if baraja_cargada is True and enemigo_cargado is True and mazo_aliado is True an
     while 0 <= opcio <= 10 or 12 <= opcio <= 13:
 
         if opcio == 1:
-            print("Cargar cartas")
+            try:
+                baraja = ET.parse("myBaraja.xml")
+                print("Cartas cargadas.")
+                baraja_cargada = True
+            except ValueError:
+                print("No se ha podido leer el fichero")
             input("Pulsa cualquier tecla para volver al menu")
-            baraja_cargada = True
         elif opcio == 2:
-            print("Cargar cartas Enemigo")
+            try:
+                enemigo = ET.parse("Enemigo.xml")
+                print("Cartas enemigas cargadas.")
+                enemigo_cargado = True
+            except ValueError:
+                print("No se ha podido leer el fichero")
             input("Pulsa cualquier tecla para volver al menu")
-            enemigo_cargado = True
         elif opcio == 3:
             print("Crear mazo aleatorio")
             input("Pulsa cualquier tecla para volver al menu")
@@ -460,13 +503,21 @@ if baraja_cargada is True and enemigo_cargado is True and mazo_aliado is True an
     while 0 <= opcio <= 13:
 
         if opcio == 1:
-            print("Cargar cartas")
+            try:
+                baraja = ET.parse("myBaraja.xml")
+                print("Cartas cargadas.")
+                baraja_cargada = True
+            except ValueError:
+                print("No se ha podido leer el fichero")
             input("Pulsa cualquier tecla para volver al menu")
-            baraja_cargada = True
         elif opcio == 2:
-            print("Cargar cartas Enemigo")
+            try:
+                enemigo = ET.parse("Enemigo.xml")
+                print("Cartas enemigas cargadas.")
+                enemigo_cargado = True
+            except ValueError:
+                print("No se ha podido leer el fichero")
             input("Pulsa cualquier tecla para volver al menu")
-            enemigo_cargado = True
         elif opcio == 3:
             print("Crear mazo aleatorio")
             input("Pulsa cualquier tecla para volver al menu")
