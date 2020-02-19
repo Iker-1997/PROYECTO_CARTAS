@@ -433,7 +433,7 @@ if baraja_cargada is True and enemigo_cargado is True and mazo_aliado is True an
                     print("TECLEA UN NUMERO ENTERO VALIDO.")
 # Aqui termina el menu para cuando tenemos las dos barajas cargadas pero solo el mazo aliado hecho.
 
-# Aqui empieza el menu para cuando tenemos las dos barajas cargadas pero solo el mazo aliado hecho.
+# Aqui empieza el menu final.
 if baraja_cargada is True and enemigo_cargado is True and mazo_aliado is True and mazo_enemigo is True:
 
     menu_final()
@@ -523,4 +523,4 @@ if baraja_cargada is True and enemigo_cargado is True and mazo_aliado is True an
                     valido = 1
                 except ValueError:
                     print("TECLEA UN NUMERO ENTERO VALIDO.")
-# Aqui termina el menu para cuando tenemos las dos barajas cargadas pero solo el mazo aliado hecho.
+# Aqui termina el menu final.
