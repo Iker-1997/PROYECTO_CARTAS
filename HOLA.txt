@@ -1,1 +1,4 @@
 Bienvenidos al Proyecto_IETI_Card_Game (M3 y M4) de Arnau Molins, Rohan Singh e Iker Cayero.
+
+Para la entrega de la fase 1, nuestro enemigo.xml es una copia de nuestro
+myBaraja.xml para comprovar que nos funciona correctamente.
