@@ -1,4 +1,20 @@
-Bienvenidos al Proyecto_IETI_Card_Game (M3 y M4) de Arnau Molins, Rohan Singh e Iker Cayero.
 
-Para la entrega de la fase 1, nuestro enemigo.xml es una copia de nuestro
-myBaraja.xml para comprovar que nos funciona correctamente.
+Bienvenidos al proyecto de cartas de Iker, Rohan y Arnau. ARANAU
+hola
+
+
+lancer + attack que defensa
+infantry equilibrat
+chivalry + defensa q atack
+
+//import xml.etree.ElementTree as ET
+tree = ET.parse('myBaraja.xml')
+root = tree.getroot()
+print(root)
+print(tree)
+for child in root:
+    print(child.tag,child.attrib)
+    for child2 in child:
+        print(child2.tag,child2.attrib)
+        for child3 in child2:
+            print(child3.tag,child3.attrib,child3.text)//```

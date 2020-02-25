@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 
 def menu_inicial():
     # Creamos el menu para utilizarlo despues.
-    print("MENU INICIAL", "\n1) Cargar cartas.", "\n2) Cargar cartas Enemigo.", "\n0) Finalizar",
+    print("MENU INICIAL","\n1) Cargar cartas.", "\n2) Cargar cartas Enemigo.", "\n0) Finalizar",
           "\n¡ALERTA! El juego no continuara hasta cargar la baraja propia.")
 
 
