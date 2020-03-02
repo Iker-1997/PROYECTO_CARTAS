@@ -5,43 +5,43 @@
     <playerLife>10</playerLife>
     <summonPointsPlayer>5</summonPointsPlayer>
     <deck>
-        <card summonPoints="3" type="lancer">
+        <card summonPoints="3" type="chivalry">
             <name>Rohan</name>
             <description>Sus llamas son capaces de detener el viento</description>
             <attack>1</attack>
             <defense>2</defense>
         </card>
-        <card summonPoints="4" type="lancer">
+        <card summonPoints="4" type="infantry">
             <name>Arnau</name>
             <description>Valentia, honor y gloria. Dispone de armadura y espada</description>
             <attack>2</attack>
             <defense>2</defense>
         </card>
-        <card summonPoints="2" type="lancer">
+        <card summonPoints="2" type="infantry">
             <name>Alexgomez</name>
             <description>Capaz de escabullirse entre la tormenta</description>
             <attack>1</attack>
             <defense>1</defense>
         </card>
-        <card summonPoints="4" type="lancer">
+        <card summonPoints="4" type="chivalry">
             <name>Alfonso</name>
             <description>Su coraza es muy dificil de batir</description>
             <attack>1</attack>
             <defense>3</defense>
         </card>
-        <card summonPoints="3" type="lancer">
+        <card summonPoints="3" type="chivalry">
             <name>Isma</name>
             <description>Su estrategia se basa en el punto debil del enemigo</description>
             <attack>1</attack>
             <defense>2</defense>
         </card>
-        <card summonPoints="5" type="infantry">
+        <card summonPoints="5" type="lancer">
             <name>Adrigomez</name>
             <description>Capaz de derribar cualquier tipo de muro y obstaculo</description>
             <attack>3</attack>
             <defense>2</defense>
         </card>
-        <card summonPoints="3" type="chivalry">
+        <card summonPoints="3" type="lancer">
             <name>Silvia</name>
             <description>Dispone de buenas armas para derribar al enemigo</description>
             <attack>3</attack>
@@ -53,25 +53,25 @@
             <attack>1</attack>
             <defense>4</defense>
         </card>
-        <card summonPoints="3" type="chivalry">
+        <card summonPoints="3" type="lancer">
             <name>Gabriel</name>
             <description>Soldado aprendiz con mucha astucia</description>
             <attack>2</attack>
             <defense>1</defense>
         </card>
-        <card summonPoints="4" type="chivalry">
+        <card summonPoints="4" type="infantry">
             <name>Davidcastilla</name>
             <description>La gloria y la sabiduria es lo que mas lo representa</description>
             <attack>2</attack>
             <defense>2</defense>
         </card>
-        <card summonPoints="3" type="chivalry">
+        <card summonPoints="3" type="lancer">
             <name>Adria</name>
             <description>Equilibrio que todo ejercito necesita. Ofrece confianza</description>
             <attack>2</attack>
             <defense>1</defense>
         </card>
-        <card summonPoints="3" type="infantry">
+        <card summonPoints="3" type="lancer">
             <name>Eric</name>
             <description>Guerrero que prioriza siempre el ataque antes que la defensa</description>
             <attack>3</attack>
@@ -83,7 +83,7 @@
             <attack>3</attack>
             <defense>2</defense>
         </card>
-        <card summonPoints="4" type="infantry">
+        <card summonPoints="4" type="chivalry">
             <name>Anna</name>
             <description>Aparece cuando menos te lo esperas. Buena defensa</description>
             <attack>1</attack>
@@ -101,7 +101,7 @@
             <attack>2</attack>
             <defense>2</defense>
         </card>
-        <card summonPoints="3" type="infantry">
+        <card summonPoints="3" type="lancer">
             <name>Ruben</name>
             <description>Su ataque es preciso y constante. Se espabila cuando toca</description>
             <attack>2</attack>
@@ -111,15 +111,15 @@
             <name>Jesus</name>
             <description>Con un golpe te dejara aturdido</description>
             <attack>3</attack>
-            <defense>2</defense>
+            <defense>3</defense>
         </card>
-        <card summonPoints="3" type="infantry">
+        <card summonPoints="3" type="chivalry">
             <name>Eduard</name>
             <description>Su defensa es de las mas potentes que puede haber</description>
             <attack>0</attack>
             <defense>3</defense>
         </card>
-        <card summonPoints="5" type="infantry">
+        <card summonPoints="5" type="lancer">
             <name>Carlos</name>
             <description>Su ataque es de los mas potentes. No lo subestimes</description>
             <attack>4</attack>
