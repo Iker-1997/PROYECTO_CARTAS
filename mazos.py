@@ -22,4 +22,3 @@ def crearMazo(archivo):
     print(len(llista_general))
     return llista_general
 print(crearMazo(archivo))
-ll
