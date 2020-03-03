@@ -23,7 +23,7 @@ archivo = archivoa.getroot()
     return llista_general
 print(aleatorio(archivo)) '''
 
-def aleatorio(archivo):
+def ataque(archivo):
     llista_general = [] ##llista dels diccionaris
     card = {} ##emmagatzema la info de les cartes
     i=0
@@ -42,4 +42,4 @@ def aleatorio(archivo):
 
     print(len(llista_general))
     return llista_general
-print(aleatorio(archivo))
+print(ataque(archivo))
