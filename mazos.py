@@ -35,7 +35,10 @@ def ataque(archivo):
                 if child in llista_general:
                     pass
                 else:
-                    i = i+1
+                    if i == 10:
+                        break
+                    else:
+                        i = i+1
                 llista_general.append(card)
                 card = {}
                 break
