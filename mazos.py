@@ -1,8 +1,8 @@
 import random
 import xml.etree.ElementTree as ET
-archivo = ET.parse('./myBaraja.xml')
-archivo = archivo.getroot()
-def aleatorio(archivo):
+archivoa = ET.parse('./myBaraja.xml')
+archivo = archivoa.getroot()
+'''def aleatorio(archivo):
     llista_general = [] ##llista dels diccionaris
     card = {} ##emmagatzema la info de les cartes
     i=0
@@ -21,12 +21,25 @@ def aleatorio(archivo):
             card = {}
     print(len(llista_general))
     return llista_general
-print(aleatorio(archivo))
+print(aleatorio(archivo)) '''
 
-def ofensivo():
+def aleatorio(archivo):
     llista_general = [] ##llista dels diccionaris
     card = {} ##emmagatzema la info de les cartes
     i=0
     while i<10: ##farem el pas 10 vegades per agafar les 10 cartes
-        x = str(random.randint(1, 20))
+        for d in range(5,0,-1):
+            for child in archivo.findall('.//card[attack="'+str(d)+'"]'): ##Agafara cadascun dels fills de //card
+                for child2 in child:
+                    card[child2.tag] = child2.text ##Per agafar i posar al diccionari l'etiqeta i el contingut
+                if child in llista_general:
+                    pass
+                else:
+                    i = i+1
+                llista_general.append(card)
+                card = {}
+                break
 
+    print(len(llista_general))
+    return llista_general
+print(aleatorio(archivo))
