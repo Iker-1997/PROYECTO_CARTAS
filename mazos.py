@@ -2,7 +2,7 @@ import random
 import xml.etree.ElementTree as ET
 archivo = ET.parse('./myBaraja.xml')
 archivo = archivo.getroot()
-def crearMazo(archivo):
+def aleatorio(archivo):
     llista_general = [] ##llista dels diccionaris
     card = {} ##emmagatzema la info de les cartes
     i=0
@@ -21,4 +21,12 @@ def crearMazo(archivo):
             card = {}
     print(len(llista_general))
     return llista_general
-print(crearMazo(archivo))
+print(aleatorio(archivo))
+
+def ofensivo():
+    llista_general = [] ##llista dels diccionaris
+    card = {} ##emmagatzema la info de les cartes
+    i=0
+    while i<10: ##farem el pas 10 vegades per agafar les 10 cartes
+        x = str(random.randint(1, 20))
+
