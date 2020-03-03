@@ -11,9 +11,11 @@ def crearMazo(archivo):
         print(deck)
 
 
+
 import xml.etree.ElementTree as ET
 archivoa = ET.parse('./myBaraja.xml')
 archivoa = archivoa.getroot()
 crearMazo(archivoa)
 
 
+r
