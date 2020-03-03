@@ -7,7 +7,7 @@ def crearMazo(archivo):
     card = {}
     i=0
     while i<10:
-        x = str(random.randint(1,10))
+        x = str(random.randint(1,20))
         for child in archivo.findall('.//card['+x+']'):
             for child2 in child:
                 card['summonPoints']=child.attrib['summonPoints']
