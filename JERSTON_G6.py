@@ -1,8 +1,8 @@
 import xml.etree.ElementTree as ET
-from PROYECTO_CARTAS.mazos.mazos import aleatorio
-from PROYECTO_CARTAS.mazos.mazos import ataque
-from PROYECTO_CARTAS.mazos.mazos import defensa
-from PROYECTO_CARTAS.mazos.mazos import equilibrado
+from mazos.mazos import aleatorio
+from mazos.mazos import ataque
+from mazos.mazos import defensa
+from mazos.mazos import equilibrado
 
 
 def menu_inicial():
