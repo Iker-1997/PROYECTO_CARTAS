@@ -39,7 +39,7 @@ def ataque(archivoa):
             else:
                 llista_general.append(card)
             card = {}
-            if len(llista_general) == 10:
+            if len(llista_general) == 10:  # Quan la llista arriba a 10, ens la retorna
                 print(len(llista_general))
                 return llista_general
         d = d - 1
@@ -61,7 +61,7 @@ def defensa(archivoa):
             else:
                 llista_general.append(card)
             card = {}
-            if len(llista_general) == 10:
+            if len(llista_general) == 10:  # Quan la llista arriba a 10, ens la retorna
                 print(len(llista_general))
                 return llista_general
         d = d - 1
