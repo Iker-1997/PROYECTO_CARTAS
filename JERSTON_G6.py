@@ -485,7 +485,7 @@ while bucle_menu == False:
                 mazo_aliado_jugar = equilibrado(baraja)
                 print(mazo_aliado_jugar)
                 input("Pulsa cualquier tecla para volver al menu")
-                elif opcio == 7:
+            elif opcio == 7:
                 print("Crear mazo aleatorio Enemigo")
                 mazo_enemigo_jugar = aleatorio(enemigo)
                 print(mazo_enemigo_jugar)
@@ -603,7 +603,7 @@ while bucle_menu == False:
                 mazo_aliado_jugar = equilibrado(baraja)
                 print(mazo_aliado_jugar)
                 input("Pulsa cualquier tecla para volver al menu")
-                elif opcio == 7:
+            elif opcio == 7:
                 print("Crear mazo aleatorio Enemigo")
                 mazo_enemigo_jugar = aleatorio(enemigo)
                 print(mazo_enemigo_jugar)
