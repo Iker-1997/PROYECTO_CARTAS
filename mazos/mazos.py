@@ -3,6 +3,7 @@ import xml.etree.ElementTree as ET
 
 
 def aleatorio(archivoa):
+    archivo = archivoa.getroot()
     llista_general = []  # llista dels diccionaris
     card = {}  # emmagatzema la info de les cartes
     i=0
