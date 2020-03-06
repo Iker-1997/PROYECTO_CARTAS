@@ -36,3 +36,10 @@ aliado = invocar(mazo)
 enemigo = invocar(mazo)
 print(aliado)
 print(enemigo)
+
+
+
+
+def turno_aleatorio():
+    x = str(random.randint(0,2))
+    return x
