@@ -1,4 +1,8 @@
 import xml.etree.ElementTree as ET
+from mazos.mazos import aleatorio
+from mazos.mazos import ataque
+from mazos.mazos import defensa
+from mazos.mazos import equilibrado
 
 
 def menu_inicial():
@@ -161,21 +165,29 @@ while bucle_menu == False:
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 3:
                 print("Crear mazo aleatorio")
+                mazo_aliado_jugar = aleatorio(baraja)
+                print(mazo_aliado_jugar)
                 mazo_aliado = True
                 input("Pulsa cualquier tecla para volver al menu")
                 break
             elif opcio == 4:
                 print("Crear mazo ofensivo")
+                mazo_aliado_jugar = ataque(baraja)
+                print(mazo_aliado_jugar)
                 mazo_aliado = True
                 input("Pulsa cualquier tecla para volver al menu")
                 break
             elif opcio == 5:
                 print("Crear mazo defensivo")
+                mazo_aliado_jugar = defensa(baraja)
+                print(mazo_aliado_jugar)
                 mazo_aliado = True
                 input("Pulsa cualquier tecla para volver al menu")
                 break
             elif opcio == 6:
                 print("Crear mazo equilibrado")
+                mazo_aliado_jugar = equilibrado(baraja)
+                print(mazo_aliado_jugar)
                 mazo_aliado = True
                 input("Pulsa cualquier tecla para volver al menu")
                 break
@@ -248,15 +260,23 @@ while bucle_menu == False:
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 3:
                 print("Crear mazo aleatorio")
+                mazo_aliado_jugar = aleatorio(baraja)
+                print(mazo_aliado_jugar)
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 4:
                 print("Crear mazo ofensivo")
+                mazo_aliado_jugar = ataque(baraja)
+                print(mazo_aliado_jugar)
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 5:
                 print("Crear mazo defensivo")
+                mazo_aliado_jugar = defensa(baraja)
+                print(mazo_aliado_jugar)
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 6:
                 print("Crear mazo equilibrado")
+                mazo_aliado_jugar = equilibrado(baraja)
+                print(mazo_aliado_jugar)
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 12:
                 print("Luchar Jugador vs Bot (arcade)")
@@ -329,38 +349,54 @@ while bucle_menu == False:
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 3:
                 print("Crear mazo aleatorio")
+                mazo_aliado_jugar = aleatorio(baraja)
+                print(mazo_aliado_jugar)
                 mazo_aliado = True
                 input("Pulsa cualquier tecla para volver al menu")
                 break
             elif opcio == 4:
                 print("Crear mazo ofensivo")
+                mazo_aliado_jugar = ataque(baraja)
+                print(mazo_aliado_jugar)
                 mazo_aliado = True
                 input("Pulsa cualquier tecla para volver al menu")
                 break
             elif opcio == 5:
                 print("Crear mazo defensivo")
+                mazo_aliado_jugar = defensa(baraja)
+                print(mazo_aliado_jugar)
                 mazo_aliado = True
                 input("Pulsa cualquier tecla para volver al menu")
                 break
             elif opcio == 6:
                 print("Crear mazo equilibrado")
+                mazo_aliado_jugar = equilibrado(baraja)
+                print(mazo_aliado_jugar)
                 mazo_aliado = True
                 input("Pulsa cualquier tecla para volver al menu")
                 break
             elif opcio == 7:
                 print("Crear mazo aleatorio Enemigo")
+                mazo_enemigo_jugar = aleatorio(enemigo)
+                print(mazo_enemigo_jugar)
                 mazo_enemigo = True
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 8:
                 print("Crear mazo ofensivo Enemigo")
+                mazo_enemigo_jugar = ataque(enemigo)
+                print(mazo_enemigo_jugar)
                 mazo_enemigo = True
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 9:
                 print("Crear mazo defensivo Enemigo")
+                mazo_enemigo_jugar = defensa(enemigo)
+                print(mazo_enemigo_jugar)
                 mazo_enemigo = True
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 10:
                 print("Crear mazo equilibrado Enemigo")
+                mazo_enemigo_jugar = equilibrado(enemigo)
+                print(mazo_enemigo_jugar)
                 mazo_enemigo = True
                 input("Pulsa cualquier tecla para volver al menu")
             else:
@@ -431,36 +467,48 @@ while bucle_menu == False:
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 3:
                 print("Crear mazo aleatorio")
+                mazo_aliado_jugar = aleatorio(baraja)
+                print(mazo_aliado_jugar)
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 4:
                 print("Crear mazo ofensivo")
+                mazo_aliado_jugar = ataque(baraja)
+                print(mazo_aliado_jugar)
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 5:
                 print("Crear mazo defensivo")
+                mazo_aliado_jugar = defensa(baraja)
+                print(mazo_aliado_jugar)
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 6:
                 print("Crear mazo equilibrado")
+                mazo_aliado_jugar = equilibrado(baraja)
+                print(mazo_aliado_jugar)
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 7:
                 print("Crear mazo aleatorio Enemigo")
+                mazo_enemigo_jugar = aleatorio(enemigo)
+                print(mazo_enemigo_jugar)
                 mazo_enemigo = True
                 input("Pulsa cualquier tecla para volver al menu")
-                break
             elif opcio == 8:
                 print("Crear mazo ofensivo Enemigo")
+                mazo_enemigo_jugar = ataque(enemigo)
+                print(mazo_enemigo_jugar)
                 mazo_enemigo = True
                 input("Pulsa cualquier tecla para volver al menu")
-                break
             elif opcio == 9:
                 print("Crear mazo defensivo Enemigo")
+                mazo_enemigo_jugar = defensa(enemigo)
+                print(mazo_enemigo_jugar)
                 mazo_enemigo = True
                 input("Pulsa cualquier tecla para volver al menu")
-                break
             elif opcio == 10:
                 print("Crear mazo equilibrado Enemigo")
+                mazo_enemigo_jugar = equilibrado(enemigo)
+                print(mazo_enemigo_jugar)
                 mazo_enemigo = True
                 input("Pulsa cualquier tecla para volver al menu")
-                break
             elif opcio == 12:
                 print("Luchar Jugador vs Bot (arcade)")
                 input("Pulsa cualquier tecla para volver al menu")
@@ -537,30 +585,46 @@ while bucle_menu == False:
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 3:
                 print("Crear mazo aleatorio")
+                mazo_aliado_jugar = aleatorio(baraja)
+                print(mazo_aliado_jugar)
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 4:
                 print("Crear mazo ofensivo")
+                mazo_aliado_jugar = ataque(baraja)
+                print(mazo_aliado_jugar)
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 5:
                 print("Crear mazo defensivo")
+                mazo_aliado_jugar = defensa(baraja)
+                print(mazo_aliado_jugar)
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 6:
                 print("Crear mazo equilibrado")
+                mazo_aliado_jugar = equilibrado(baraja)
+                print(mazo_aliado_jugar)
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 7:
                 print("Crear mazo aleatorio Enemigo")
+                mazo_enemigo_jugar = aleatorio(enemigo)
+                print(mazo_enemigo_jugar)
                 mazo_enemigo = True
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 8:
                 print("Crear mazo ofensivo Enemigo")
+                mazo_enemigo_jugar = ataque(enemigo)
+                print(mazo_enemigo_jugar)
                 mazo_enemigo = True
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 9:
                 print("Crear mazo defensivo Enemigo")
+                mazo_enemigo_jugar = defensa(enemigo)
+                print(mazo_enemigo_jugar)
                 mazo_enemigo = True
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 10:
                 print("Crear mazo equilibrado Enemigo")
+                mazo_enemigo_jugar = equilibrado(enemigo)
+                print(mazo_enemigo_jugar)
                 mazo_enemigo = True
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 11:
