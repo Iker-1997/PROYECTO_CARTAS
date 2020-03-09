@@ -26,40 +26,49 @@ print(aleatorio(archivo))
 def ataque(archivo):
     llista_general = [] ##llista dels diccionaris
     card = {} ##emmagatzema la info de les cartes
-    d = 5
-    while True: ##farem el pas 10 vegades per agafar les 10 cartes
-        for child in archivo.findall('.//card[attack="'+str(d)+'"]'): ##Agafara cadascun dels fills de //card
-            for child2 in child:
-                card[child2.tag] = child2.text ##Per agafar i posar al diccionari l'etiqeta i el contingut
-            if child in llista_general:
-                pass
-            else:
+    i=0
+    while i<10: ##farem el pas 10 vegades per agafar les 10 cartes
+        for d in range(5,0,-1):
+            for child in archivo.findall('.//card[attack="'+str(d)+'"]'): ##Agafara cadascun dels fills de //card
+                for child2 in child:
+                    card[child2.tag] = child2.text ##Per agafar i posar al diccionari l'etiqeta i el contingut
+                if child in llista_general:
+                    pass
+                else:
+                    if i == 10:
+                        break
+                    else:
+                        i = i+1
                 llista_general.append(card)
-            card = {}
-            if len(llista_general) == 10:
-                return llista_general
-        d = d - 1
-    print(len(llista_general))
+                card = {}
+                break
 
-'''
+    print(len(llista_general))
+    return llista_general '''
+
+
 def defensa(archivo):
     llista_general = [] ##llista dels diccionaris
     card = {} ##emmagatzema la info de les cartes
-    d = 5
-    while True: ##farem el pas 10 vegades per agafar les 10 cartes
-        for child in archivo.findall('.//card[defense="'+str(d)+'"]'): ##Agafara cadascun dels fills de //card
-            for child2 in child:
-                card[child2.tag] = child2.text ##Per agafar i posar al diccionari l'etiqeta i el contingut
-            if child in llista_general:
-                pass
-            else:
+    i=0
+    while i<10: ##farem el pas 10 vegades per agafar les 10 cartes
+        for d in range(5,0,-1):
+            for child in archivo.findall('.//card[defense="'+str(d)+'"]'): ##Agafara cadascun dels fills de //card
+                for child2 in child:
+                    card[child2.tag] = child2.text ##Per agafar i posar al diccionari l'etiqeta i el contingut
+                if child in llista_general:
+                    pass
+                else:
+                    if i == 10:
+                        break
+                    else:
+                        i = i+1
                 llista_general.append(card)
-            card = {}
-            if len(llista_general) == 10:
-                return llista_general
-        d = d - 1
-    print(len(llista_general))
+                card = {}
+                break
 
+    print(len(llista_general))
+    return llista_general
 
 
 print(defensa(archivo))
