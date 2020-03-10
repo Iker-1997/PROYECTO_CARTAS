@@ -31,7 +31,7 @@ def invocar(mazo):
 
 
 def turno_aleatorio():
-    x = str(random.randint(0,2))
+    x = random.randint(0,1)
     return x
 
 
