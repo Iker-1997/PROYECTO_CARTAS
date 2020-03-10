@@ -36,7 +36,3 @@ def turno_aleatorio():
 
 
 baraja = ET.parse("myBaraja.xml")
-aliado = invocar(equilibrado(baraja))
-enemigo = invocar(equilibrado(baraja))
-print(aliado)
-print(enemigo)

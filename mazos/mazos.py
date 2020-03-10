@@ -20,7 +20,6 @@ def aleatorio(archivoa):
                 i = i+1
                 llista_general.append(card)
             card = {}
-    print(len(llista_general))
     return llista_general
 
 
@@ -41,7 +40,6 @@ def ataque(archivoa):
                 llista_general.append(card)
             card = {}
             if len(llista_general) == 10:  # Quan la llista arriba a 10, ens la retorna
-                print(len(llista_general))
                 return llista_general
         d = d - 1
 
@@ -63,7 +61,6 @@ def defensa(archivoa):
                 llista_general.append(card)
             card = {}
             if len(llista_general) == 10:  # Quan la llista arriba a 10, ens la retorna
-                print(len(llista_general))
                 return llista_general
         d = d - 1
 
@@ -92,7 +89,6 @@ def equilibrado(archivoa):
                     llista_general.append(card)
             card = {}
             if len(llista_general) == 10:  # Quan la llista arriba a 10, ens la retorna
-                print(len(llista_general))
                 return llista_general
         d = d + 1
 
