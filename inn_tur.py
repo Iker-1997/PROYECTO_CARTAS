@@ -33,6 +33,5 @@ def invocar(mazo):
 def turno_aleatorio():
     x = random.randint(0,1)
     return x
-
-
+print(invocar())
 baraja = ET.parse("myBaraja.xml")
