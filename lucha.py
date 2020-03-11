@@ -1,5 +1,5 @@
-from PROYECTO_CARTAS.inn_tur import *
-from PROYECTO_CARTAS.mazos.mazos import *
+from inn_tur import *
+from mazos.mazos import *
 
 
 def lucha(mazo_aliado, mazo_enemigo, turno, defecto_aliado=10, defecto_enemigo=10):
