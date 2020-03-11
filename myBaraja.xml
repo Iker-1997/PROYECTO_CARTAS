@@ -111,7 +111,7 @@
             <name>Jesus</name>
             <description>Con un golpe te dejara aturdido</description>
             <attack>3</attack>
-            <defense>3</defense>
+            <defense>2</defense>
         </card>
         <card summonPoints="3" type="chivalry">
             <name>Eduard</name>
