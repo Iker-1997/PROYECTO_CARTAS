@@ -69,7 +69,3 @@ def partida(mazo_aliado, mazo_enemigo, defecto_aliado=10, defecto_enemigo=10,):
                         valido = 1
                     except ValueError:
                         print("TECLEA UN NUMERO ENTERO VALIDO.")
-
-juego = equilibrado(baraja)
-juegazo = equilibrado(baraja)
-partida(juego, juegazo)
