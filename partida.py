@@ -3,7 +3,6 @@ from inn_tur import *
 from mazos.mazos import *
 
 
-
 def partida(defecto_aliado=10, defecto_enemigo=10):
     momento_partida = 0
     vida_aliado = defecto_aliado
