@@ -278,7 +278,7 @@ while bucle_menu == False:
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 12:
                 print("Luchar Jugador vs Bot (arcade)")
-                partida(mazo_aliado_jugar, aleatorio(baraja))
+                partida(mazo_aliado_jugar, aleatorio(baraja), "arcade")
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 13:
                 print("Luchar Jugador vs Bot (liga)")
@@ -510,7 +510,7 @@ while bucle_menu == False:
                 break
             elif opcio == 12:
                 print("Luchar Jugador vs Bot (arcade)")
-                partida(mazo_aliado_jugar, aleatori(baraja))
+                partida(mazo_aliado_jugar, aleatori(baraja), "arcade")
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 13:
                 print("Luchar Jugador vs Bot (liga)")
@@ -629,11 +629,11 @@ while bucle_menu == False:
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 11:
                 print("Luchar Jugador vs Jugador")
-                partida(mazo_aliado_jugar, mazo_enemigo_jugar)
+                partida(mazo_aliado_jugar, mazo_enemigo_jugar, "jugador")
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 12:
                 print("Luchar Jugador vs Bot (arcade)")
-                partida(mazo_aliado_jugar, aleatorio(baraja))
+                partida(mazo_aliado_jugar, aleatorio(baraja), "arcade")
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 13:
                 print("Luchar Jugador vs Bot (liga)")
