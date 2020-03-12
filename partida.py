@@ -12,6 +12,7 @@ def partida(defecto_aliado=10, defecto_enemigo=10):
     vida_aliado = resultado[0]
     vida_enemigo = resultado[1]
     momento_partida += 1
+    input()
     while vida_aliado > 0 and vida_enemigo > 0:
         resultado = lucha(mazo_aliado, mazo_enemigo, vida_aliado, vida_enemigo)
         vida_aliado = resultado[0]
@@ -19,6 +20,8 @@ def partida(defecto_aliado=10, defecto_enemigo=10):
         vida_enemigo = resultado[1]
         print(vida_enemigo)
         input()
+        if vida_enemigo <= 0 or vida_aliado <= 0:
+            print("Partida acabada")
 
 mazo_aliado = equilibrado(baraja)
 mazo_enemigo = equilibrado(baraja)
