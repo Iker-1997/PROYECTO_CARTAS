@@ -1,13 +1,11 @@
 import xml.etree.ElementTree as ET
-from mazos.mazos import aleatorio
-from mazos.mazos import ataque
-from mazos.mazos import defensa
-from mazos.mazos import equilibrado
+from mazos.mazos import *
+from partida import *
 
 
 def menu_inicial():
     # Creamos el menu para utilizarlo despues.
-    print("MENU INICIAL","\n1) Cargar cartas.", "\n2) Cargar cartas Enemigo.", "\n0) Finalizar",
+    print("MENU INICIAL", "\n1) Cargar cartas.", "\n2) Cargar cartas Enemigo.", "\n0) Finalizar",
           "\n¡ALERTA! El juego no continuara hasta cargar la baraja propia.")
 
 
@@ -280,6 +278,7 @@ while bucle_menu == False:
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 12:
                 print("Luchar Jugador vs Bot (arcade)")
+                partida(mazo_aliado_jugar, aleatorio(baraja))
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 13:
                 print("Luchar Jugador vs Bot (liga)")
@@ -490,27 +489,28 @@ while bucle_menu == False:
                 mazo_enemigo_jugar = aleatorio(enemigo)
                 print(mazo_enemigo_jugar)
                 mazo_enemigo = True
-                input("Pulsa cualquier tecla para volver al menu")
+                break
             elif opcio == 8:
                 print("Crear mazo ofensivo Enemigo")
                 mazo_enemigo_jugar = ataque(enemigo)
                 print(mazo_enemigo_jugar)
                 mazo_enemigo = True
-                input("Pulsa cualquier tecla para volver al menu")
+                break
             elif opcio == 9:
                 print("Crear mazo defensivo Enemigo")
                 mazo_enemigo_jugar = defensa(enemigo)
                 print(mazo_enemigo_jugar)
                 mazo_enemigo = True
-                input("Pulsa cualquier tecla para volver al menu")
+                break
             elif opcio == 10:
                 print("Crear mazo equilibrado Enemigo")
                 mazo_enemigo_jugar = equilibrado(enemigo)
                 print(mazo_enemigo_jugar)
                 mazo_enemigo = True
-                input("Pulsa cualquier tecla para volver al menu")
+                break
             elif opcio == 12:
                 print("Luchar Jugador vs Bot (arcade)")
+                partida(mazo_aliado_jugar, aleatori(baraja))
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 13:
                 print("Luchar Jugador vs Bot (liga)")
@@ -629,9 +629,11 @@ while bucle_menu == False:
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 11:
                 print("Luchar Jugador vs Jugador")
+                partida(mazo_aliado_jugar, mazo_enemigo_jugar)
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 12:
                 print("Luchar Jugador vs Bot (arcade)")
+                partida(mazo_aliado_jugar, aleatorio(baraja))
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 13:
                 print("Luchar Jugador vs Bot (liga)")
