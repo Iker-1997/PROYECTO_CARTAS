@@ -38,7 +38,6 @@ def partida(mazo_aliado, mazo_enemigo, defecto_aliado=10, defecto_enemigo=10,):
             # Una vegada ha entrat al bucle, tenim les condicions per a cada opcio
             if opcio == 1:
                 resultado = lucha(mazo_aliado, mazo_enemigo, vida_aliado, vida_enemigo)
-                print(resultado)
                 vida_aliado = resultado[0]
                 vida_enemigo = resultado[1]
                 momento_partida += 1

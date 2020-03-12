@@ -8,15 +8,16 @@ def lucha(mazo_aliado_fijo, mazo_enemigo_fijo, vida_aliado, vida_enemigo):
     mazito_e = mazo_enemigo_fijo.copy()
     aliado = invocar(mazito_a)
     enemigo = invocar(mazito_e)
-    print(aliado)
-    print(enemigo)
+    print("Cartas invocadas")
+    print("Aliado", aliado)
+    print("Enemigo", enemigo)
     mano_aliada = aliado.copy()
     mano_enemiga = enemigo.copy()
     turnos = 0
     if turno == 0:
-        print("Ataca primero aliado", turno)
+        print("\nAtaca primero el aliado")
     else:
-        print("Ataca primero enemigo", turno)
+        print("\nAtaca primero el enemigo")
     while turnos < 3 and len(mano_enemiga) > 0 and len(mano_aliada) > 0:
         if turno == 0:
             if len(mano_aliada) > len(mano_enemiga):
@@ -138,11 +139,13 @@ def lucha(mazo_aliado_fijo, mazo_enemigo_fijo, vida_aliado, vida_enemigo):
                                 vida_enemigo = vida_enemigo - res
                         for j in range(len(mano_aliada)-1, len(mano_enemiga)-1, -1):
                             vida_enemigo = vida_enemigo - int(mano_aliada[j]["attack"])
+            print("\n", "Turno ", turnos + 1)
+            print("\n", "Mano aliada", mano_aliada)
+            print("\n", "Vida aliado: ", vida_aliado)
+            print("\n", "Mano enemiga", mano_enemiga)
+            print("\n", "Vida enemigo: ", vida_enemigo)
         turnos += 1
-        print("Se ha/han pasado", turnos, "turno/s.")
-    print("Mano aliada", mano_aliada)
-    print("Mano enemiga", mano_enemiga)
-    print("Vida enemigo: ", vida_enemigo)
-    print("Vida aliado: ", vida_aliado)
+        print("\nSe ha/han pasado", turnos, "turno/s.")
+
     return[vida_aliado, vida_enemigo]
 
