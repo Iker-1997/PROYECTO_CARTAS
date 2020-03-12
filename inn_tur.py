@@ -4,14 +4,15 @@ import random
 
 
 def invocar(mazo):
-    mazo_invocar = mazo
+    mazito = mazo.copy()
+    mazo_invocar = mazito
     puntos_inv = 5
     x = 0
     invocacion = []
 
     while puntos_inv > 0:
         if len(mazo_invocar) > 1:
-            y = random.randrange(0, len(mazo_invocar) - 1)
+            y = random.randrange(0, len(mazo_invocar))
             carta = mazo_invocar[y]
             del mazo_invocar[y]
             if int(carta["summonPoints"]) <= puntos_inv:
