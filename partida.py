@@ -50,8 +50,12 @@ def partida(mazo_aliado, mazo_enemigo, tipo, defecto_aliado=10, defecto_enemigo=
                 print("Partida guardada")
                 if tipo == "arcade":
                     partida_guardada_arcade(mazo_aliado, mazo_enemigo, vida_aliado, vida_enemigo)
+                    existe_arcade_guardada = True
+                    return existe_arcade_guardada
                 else:
                     partida_guardada_jugadores(mazo_aliado, mazo_enemigo, vida_aliado, vida_enemigo)
+                    existe_jugadores_guardada = True
+                    return existe_jugadores_guardada
                 bucle_menu = True
                 break
             else:
