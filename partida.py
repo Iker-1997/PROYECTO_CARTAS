@@ -1,6 +1,7 @@
 from lucha import *
 from inn_tur import *
 from mazos.mazos import *
+from gestion_partidas import *
 
 
 def menu_partida():
@@ -8,7 +9,7 @@ def menu_partida():
     print("MENU DE PARTIDA", "\n1) Seguir jugando", "\n2) Guardar y finalizar.", "\n0) Finalizar")
 
 
-def partida(mazo_aliado, mazo_enemigo, defecto_aliado=10, defecto_enemigo=10,):
+def partida(mazo_aliado, mazo_enemigo, tipo, defecto_aliado=10, defecto_enemigo=10,):
     opcio = 1
     momento_partida = 0
     vida_aliado = defecto_aliado
@@ -46,7 +47,15 @@ def partida(mazo_aliado, mazo_enemigo, defecto_aliado=10, defecto_enemigo=10,):
                     bucle_menu = True
                     break
             elif opcio == 2:
-                print("Guardada")
+                print("Partida guardada")
+                if tipo == "arcade":
+                    partida_guardada_arcade(mazo_aliado, mazo_enemigo, vida_aliado, vida_enemigo)
+                    existe_arcade_guardada = True
+                    return existe_arcade_guardada
+                else:
+                    partida_guardada_jugadores(mazo_aliado, mazo_enemigo, vida_aliado, vida_enemigo)
+                    existe_jugadores_guardada = True
+                    return existe_jugadores_guardada
                 bucle_menu = True
                 break
             else:

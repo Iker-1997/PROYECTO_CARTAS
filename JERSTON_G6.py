@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as ET
 from mazos.mazos import *
 from partida import *
+import os
 
 
 def menu_inicial():
@@ -53,6 +54,8 @@ baraja_cargada = False
 enemigo_cargado = False
 mazo_aliado = False
 mazo_enemigo = False
+existe_arcade_guardada = False
+existe_jugadores_guardada = False
 
 while bucle_menu == False:
     # Aqui comienza el menu inicial.
@@ -278,7 +281,18 @@ while bucle_menu == False:
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 12:
                 print("Luchar Jugador vs Bot (arcade)")
-                partida(mazo_aliado_jugar, aleatorio(baraja))
+                if existe_arcade_guardada == True:
+                    pregunta = input("Hay una partida guardada, quieres retomarla? S/N").upper()
+                    if pregunta == "S":
+                        retomar = cargar_partida("mazo_aliado_arcade", "mazo_enemigo_arcade", "vidas_arcade")
+                        existe_arcade_guardada = partida(retomar[0], retomar[1], "arcade", int(retomar[2]), int(retomar[3]))
+                    else:
+                        os.remove("mazo_aliado_arcade")
+                        os.remove("mazo_enemigo_arcade")
+                        os.remove("vidas_arcade")
+                        existe_arcade_guardada = partida(mazo_aliado_jugar, aleatorio(baraja), "arcade")
+                else:
+                    existe_arcade_guardada = partida(mazo_aliado_jugar, aleatorio(baraja), "arcade")
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 13:
                 print("Luchar Jugador vs Bot (liga)")
@@ -510,7 +524,18 @@ while bucle_menu == False:
                 break
             elif opcio == 12:
                 print("Luchar Jugador vs Bot (arcade)")
-                partida(mazo_aliado_jugar, aleatori(baraja))
+                if existe_arcade_guardada == True:
+                    pregunta = input("Hay una partida guardada, quieres retomarla? S/N").upper()
+                    if pregunta == "S":
+                        retomar = cargar_partida("mazo_aliado_arcade", "mazo_enemigo_arcade", "vidas_arcade")
+                        partida(retomar[0], retomar[1], "arcade", int(retomar[2]), int(retomar[3]))
+                    else:
+                        os.remove("mazo_aliado_arcade")
+                        os.remove("mazo_enemigo_arcade")
+                        os.remove("vidas_arcade")
+                        partida(mazo_aliado_jugar, aleatorio(baraja), "arcade")
+                else:
+                    partida(mazo_aliado_jugar, aleatorio(baraja), "arcade")
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 13:
                 print("Luchar Jugador vs Bot (liga)")
@@ -629,11 +654,35 @@ while bucle_menu == False:
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 11:
                 print("Luchar Jugador vs Jugador")
-                partida(mazo_aliado_jugar, mazo_enemigo_jugar)
+                if existe_jugadores_guardada == True:
+                    pregunta = input("Hay una partida guardada, quieres retomarla? S/N").upper()
+                    if pregunta == "S":
+                        retomar = cargar_partida("mazo_aliado_jugadores", "mazo_enemigo_jugadores", "vidas_jugadores")
+                        existe_jugadores_guardada = partida(retomar[0], retomar[1], "jugadores", int(retomar[2]),
+                                                            int(retomar[3]))
+                    else:
+                        os.remove("mazo_aliado_jugadores")
+                        os.remove("mazo_enemigo_jugadores")
+                        os.remove("vidas_jugadores")
+                        existe_jugadores_guardada = partida(mazo_aliado_jugar, mazo_enemigo_jugar, "jugadores")
+                else:
+                    existe_jugadores_guardada = partida(mazo_aliado_jugar, mazo_enemigo_jugar, "jugadores")
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 12:
                 print("Luchar Jugador vs Bot (arcade)")
-                partida(mazo_aliado_jugar, aleatorio(baraja))
+                if existe_arcade_guardada == True:
+                    pregunta = input("Hay una partida guardada, quieres retomarla? S/N").upper()
+                    if pregunta == "S":
+                        retomar = cargar_partida("mazo_aliado_arcade", "mazo_enemigo_arcade", "vidas_arcade")
+                        existe_arcade_guardada = partida(retomar[0], retomar[1], "arcade", int(retomar[2]),
+                                                         int(retomar[3]))
+                    else:
+                        os.remove("mazo_aliado_arcade")
+                        os.remove("mazo_enemigo_arcade")
+                        os.remove("vidas_arcade")
+                        existe_arcade_guardada = partida(mazo_aliado_jugar, aleatorio(baraja), "arcade")
+                else:
+                    existe_arcade_guardada = partida(mazo_aliado_jugar, aleatorio(baraja), "arcade")
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 13:
                 print("Luchar Jugador vs Bot (liga)")
