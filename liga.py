@@ -4,7 +4,9 @@ from lucha import *
 def liga(mazo_aliado, jornada=0, jugador2=aleatorio(baraja), jugador3=aleatorio(baraja), jugador4=aleatorio(baraja),
          jugador5=aleatorio(baraja), jugador6=aleatorio(baraja), puntos_aliado=0, puntos_jugador2=0, puntos_jugador3=0,
          puntos_jugador4=0, puntos_jugador5=0, puntos_jugador6=0):
+        # Asignamos mazos aleatorios a cada jugador y 0 puntos a cada uno.
     while jornada < 5:
+        # Bucle que enfrentará a todos los jugadores hasta la jornada 5. Se sumarán 20 puntos a los que vayan ganando.
         if jornada == 0:
             resultado1 = lucha_liga(mazo_aliado, jugador2)
             if resultado1[0] > resultado1[1]:

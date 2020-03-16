@@ -4,7 +4,7 @@ from mazos.mazos import *
 
 def lucha(mazo_aliado_fijo, mazo_enemigo_fijo, vida_aliado, vida_enemigo):
     turno = turno_aleatorio()
-    mazito_a = mazo_aliado_fijo.copy()
+    mazito_a = mazo_aliado_fijo.copy() # Copiamos mazo inicial para que no desaparezcan las eliminadas al siguiente turno
     mazito_e = mazo_enemigo_fijo.copy()
     aliado = invocar(mazito_a)
     enemigo = invocar(mazito_e)
@@ -14,18 +14,20 @@ def lucha(mazo_aliado_fijo, mazo_enemigo_fijo, vida_aliado, vida_enemigo):
     mano_aliada = aliado.copy()
     mano_enemiga = enemigo.copy()
     turnos = 0
-    if turno == 0:
+    if turno == 0: # Para saber quien empezará atacando
         print("\nAtaca primero el aliado")
     else:
         print("\nAtaca primero el enemigo")
     while turnos < 3 and len(mano_enemiga) > 0 and len(mano_aliada) > 0:
-        if vida_aliado < 0 or vida_enemigo < 0:
+        # Se hace un bucle para que se ataquen hasta que el enemigo se quede sin cartas y el resto de daño
+        # lo recibe la vida del jugador
+        if vida_aliado < 0 or vida_enemigo < 0: # Mientras aliado o enemigo tengan vida y cartas, seguiran jugando.
             break
         turnos += 1
         print("\nSe ha/han pasado", turnos, "turno/s.")
         if turno == 0:
             if len(mano_aliada) > len(mano_enemiga):
-                if len(mano_enemiga) == 1:
+                if len(mano_enemiga) == 1: # Comprobaremos si se puede aplicar un multiplicador segun el tipo de carta.
                     if mano_aliada[0]["type"] == "infantry" and mano_enemiga[0]["type"] == "lancer" \
                             or mano_aliada[0]["type"] == "lancer" and mano_enemiga[0]["type"] == "chivalry" \
                             or mano_aliada[0]["type"] == "chivalry" and mano_enemiga[0]["type"] == "infantry":
@@ -33,10 +35,11 @@ def lucha(mazo_aliado_fijo, mazo_enemigo_fijo, vida_aliado, vida_enemigo):
                         res = (int(mano_aliada[0]["attack"])*2) - int(mano_enemiga[0]["defense"])
                     else:
                         res = int(mano_aliada[0]["attack"]) - int(mano_enemiga[0]["defense"])
-                    if res > 0:
+                    if res > 0: # Se borrará la carta cuando esta se quede sin vida
                         del mano_enemiga[0]
                         vida_enemigo = vida_enemigo - res
-                    for j in range(len(mano_aliada)-1, 0, -1):
+                    for j in range(len(mano_aliada)-1, 0, -1): # Cogemos las cartas en orden inverso porque de forma
+                        # normal nos saltaba un error en la selección.
                         vida_enemigo = vida_enemigo - int(mano_aliada[j]["attack"])
                 else:
                     for i in range(0, len(mano_enemiga)):
