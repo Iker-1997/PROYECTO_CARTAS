@@ -1,7 +1,9 @@
 import xml.etree.ElementTree as ET
+import os
 from mazos.mazos import *
 from partida import *
-import os
+from liga import *
+
 
 
 def menu_inicial():
@@ -296,6 +298,7 @@ while bucle_menu == False:
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 13:
                 print("Luchar Jugador vs Bot (liga)")
+                liga(mazo_aliado_jugar)
                 input("Pulsa cualquier tecla para volver al menu")
             else:
                 bucle_menu = True
@@ -539,6 +542,7 @@ while bucle_menu == False:
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 13:
                 print("Luchar Jugador vs Bot (liga)")
+                liga(mazo_aliado_jugar)
                 input("Pulsa cualquier tecla para volver al menu")
             else:
                 bucle_menu = True
@@ -686,6 +690,7 @@ while bucle_menu == False:
                 input("Pulsa cualquier tecla para volver al menu")
             elif opcio == 13:
                 print("Luchar Jugador vs Bot (liga)")
+                liga(mazo_aliado_jugar)
                 input("Pulsa cualquier tecla para volver al menu")
             else:
                 bucle_menu = True
