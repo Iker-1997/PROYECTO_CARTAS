@@ -577,7 +577,7 @@ while bucle_menu == False:
         while opcio < 0 or opcio > 13:
 
             print("TECLEA UN NUMERO ENTERO VALIDO.")
-            menu_juego_individual_barajas()
+            menu_final()
             valido = 0
             while valido == 0:
                 try:
