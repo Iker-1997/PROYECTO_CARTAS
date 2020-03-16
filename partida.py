@@ -2,6 +2,7 @@ from lucha import *
 from inn_tur import *
 from mazos.mazos import *
 from gestion_partidas import *
+import os
 
 
 def menu_partida():
@@ -43,11 +44,26 @@ def partida(mazo_aliado, mazo_enemigo, tipo, defecto_aliado=10, defecto_enemigo=
                 vida_enemigo = resultado[1]
                 momento_partida += 1
                 if vida_enemigo <= 0 or vida_aliado <= 0:
-                    print("Partida acabada")
+                    if tipo == "arcade":
+                        try:
+                            os.remove("mazo_aliado_arcade")
+                            os.remove("mazo_enemigo_arcade")
+                            os.remove("vidas_arcade")
+                            print("Partida acabada.")
+                        except FileNotFoundError:
+                            print("Partida acabada.")
+                    else:
+                        try:
+                            os.remove("mazo_aliado_jugadores")
+                            os.remove("mazo_enemigo_jugadores")
+                            os.remove("vidas_jugadores")
+                            print("Partida acabada.")
+                        except FileNotFoundError:
+                            print("Partida acabada.")
                     bucle_menu = True
                     break
             elif opcio == 2:
-                print("Partida guardada")
+                print("Partida guardada.")
                 if tipo == "arcade":
                     partida_guardada_arcade(mazo_aliado, mazo_enemigo, vida_aliado, vida_enemigo)
                     existe_arcade_guardada = True
